@@ -29,7 +29,7 @@ a{
   cursor: pointer;
 }
 #wrapper{
-	background:url(images/header_bg.gif) repeat-x left top;
+	background:url(img/header_bg.gif) repeat-x left top;
 }
 
 #header{
@@ -37,7 +37,7 @@ a{
 	width:100%;
 	height: 22vw;
 	padding:25px 0;
-	background: url(images/K.png) no-repeat left top,#ffffdb;
+	background: url(img/K.png) no-repeat left top,#ffffdb;
 	background-size: 40%;
 	position: relative;
 	background-position: -6%;
@@ -172,7 +172,7 @@ h1 strong{
 
 #main h2{
 	/*font-family: 'Fredericka the Great', cursive;*/
-	font-family: 'Comfortaa', cursive;
+	/* font-family: 'Comfortaa', cursive; */
 	font-weight:300;
 	font-size: 2.5em;
 	color:#666;
@@ -236,7 +236,7 @@ h1 strong{
 }
 
 #main .worksSet .detail dd .small dt{
-	background:url(images/listIcon01.gif) no-repeat left center;
+	background:url(img/listIcon01.gif) no-repeat left center;
 	padding-left:18px;
 	font-weight:bold;
 }
