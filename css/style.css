@@ -1,0 +1,329 @@
+/*
+ Theme Name:   KK
+ Theme URI: http://anakogure.info/
+ Description:  KK
+ Author:       Kana Kogure
+ Version:      1.0.0
+*/
+@charset "utf-8";
+/* CSS Document */
+
+html {
+    font-size: 62.5%;
+}
+body {
+    background: #fff;
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #1e1e1e;
+    word-break: break-all;
+    -webkit-text-size-adjust: 100%;
+		color:#666;
+}
+* {
+    box-sizing: border-box;
+}
+a{
+  cursor: pointer;
+}
+#wrapper{
+	background:url(images/header_bg.gif) repeat-x left top;
+}
+
+#header{
+	margin:0 auto;
+	width:100%;
+	height: 22vw;
+	padding:25px 0;
+	background: url(images/K.png) no-repeat left top,#ffffdb;
+	background-size: 40%;
+	position: relative;
+	background-position: -6%;
+}
+
+h1{
+  width: 30vw;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-2rem,-50%);
+}
+
+h1 strong{
+	font-weight:normal;
+	font-size:2em;
+}
+
+#contents{
+	margin:50px auto;
+	width:980px;
+	overflow:hidden;
+}
+
+/* ナビゲーション */
+/*#nav{
+	width:180px;
+	float:left;
+	line-height:1.6;
+}*/
+
+/*#nav ul#sliding-navigation li.sliding-element a{
+	text-decoration:none;
+	color:#333;
+	display:block;
+	border-bottom:3px solid #ccc;
+	margin-bottom:1em;
+}*/
+/*
+#nav ul#sliding-navigation li.sliding-element a
+{
+	text-decoration:none;
+	display: block;
+	width: 120px;
+	padding: 7px 10px;
+	border-left:3px solid #aaa;
+	margin-bottom:0.5em;
+	color:#333;
+	background-color:#eee;
+}
+
+#nav ul#sliding-navigation li.sliding-element a:hover {
+	color: #fff;
+	border-left:5px solid #333;
+	background-color:#999;
+	box-shadow:1px 1px 1px rgba(0,0,0,.2);
+}
+
+#main{
+	width:800px;
+	float:right;
+}*/
+#navigation{
+  width: 100%;}
+#navigation ul{
+  display: flex;
+  -webkit-justify-content: center;
+    justify-content: center;
+    background: #f2f2f2;
+    padding: 10px;
+}
+#navigation li{
+      width: 100%;
+      text-align: center;
+      border-left: 1px solid #bbb;
+}
+#navigation li:first-child{
+	border-left:none;
+}
+#navigation li a{
+  text-decoration: none;
+  color: #666;
+  display: block;
+  cursor:;
+}
+#navigation li a.active{
+  color: #1edcd0;
+}
+/*========= biographyBox =========*/
+/*#main #biographyBox{
+	text-align:center;
+	margin-bottom:20px;
+	border:1px solid #999;
+	position:relative;
+
+}
+#main #biographyBox h2{
+	font-size:20px;
+	font-weight:normal;
+	text-transform:uppercase;
+	background:#999;
+	color:#fff;
+	padding:5px;
+	border-bottom: none;
+	text-shadow:-1px -1px 0 rgba(0,0,0,0.5);
+	margin-bottom:0;
+
+	}
+#main #biographyBox .button{
+	background: rgba(0,0,0,.5);
+	padding: 3px 5px;
+	border-radius:5px;
+	position:absolute;
+	right:10px;
+	top:9px;
+	box-shadow: 0 3px 0 rgba(0,0,0,.3);
+	width:12em;
+	font-size:10px;
+	color:#ddd;
+	text-shadow:-1px -1px 0 #000;
+	}
+#main #biographyBox .button:hover{
+	box-shadow: 0 1px 0 rgba(0,0,0,.3);
+	top: 11px;
+}
+
+#main #biographyBox .text{
+	padding: 10px;
+	display:none;
+	text-align: left;
+	}*/
+
+#main h2{
+	/*font-family: 'Fredericka the Great', cursive;*/
+	font-family: 'Comfortaa', cursive;
+	font-weight:300;
+	font-size: 2.5em;
+	color:#666;
+	border-bottom: 1px solid #666;
+	margin-bottom:40px;
+}
+
+#main h2 span{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	padding-left:1em;
+	font-size: 0.5em;
+}
+
+
+#main .thumbnail{
+	width: 47%;
+	height:352px;
+	float:left;
+	margin-right: 10px;
+	background-color:#fbfaf7;
+	text-align:center;
+	border:1px solid #fff;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+
+#main .thumbnail:hover{
+	border:1px solid #666;
+	box-sizing:border-box;
+}
+
+#main .thumbnail img{
+	height:auto;
+	}
+
+#main .detail{
+	width:50%;
+	float:right;
+}
+
+#main .detail .title{
+	font-size:1.5em;
+	font-weight:bold;
+	border-bottom:2px dashed #999;
+	padding-bottom:0.1em;
+	margin-bottom:.5em;
+	display: flex;
+	align-items: center;
+}
+
+#main .detail .url{
+	margin-bottom:.5em;
+}
+
+#main .detail .desc{
+	margin-bottom:1em;
+}
+
+#main .worksSet .detail dd .small {
+	font-size:0.9em;
+}
+
+#main .worksSet .detail dd .small dt{
+	background:url(images/listIcon01.gif) no-repeat left center;
+	padding-left:18px;
+	font-weight:bold;
+}
+
+#main .worksSet .detail dd .small dd{
+	margin-bottom:0.5em;
+	padding-left:18px;
+}
+
+.worksSet{
+	clear:both;
+	margin:20px 0;
+	overflow:hidden;
+	padding:8px;
+}
+
+#pageUp {
+clear: both;
+position:fixed;
+bottom: 50px;
+right:50px;
+}
+
+#pageUp a {
+	display:block;
+	text-align:center;
+	width:80px;
+	height:80px;
+	color: #999;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 80px;
+	background:rgba(0,0,0,.1);
+	transition: all .5s linear;
+}
+
+#pageUp a:hover{
+	text-shadow: -1px -1px 1px rgba(0,0,0,.3);
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+	background-color:#666;
+	color:#FFF;
+
+
+}
+#pageUp a span{
+	font-weight:bold;
+	font-size:3em;
+}
+
+table#prTable{
+	font-size:0.8em;
+}
+
+
+table#prTable,#prTable th,#prTable td{
+	border:none;
+
+}
+
+#prTable th,#prTable td{
+	padding:5px 10px;
+	vertical-align:top;
+}
+
+#prTable th{
+	text-align:left;
+  font-weight: bold;
+}
+
+#prPhoto{
+	float:left;
+	margin-right:20px;
+}
+
+.sliderWrap{
+	width:450px;
+}
+
+.ico_gray{
+  background: #68dad3;
+  color: #fff;
+  font-size: 12px;
+  height: 23px;
+  padding: 0px 5px;
+  line-height: 23px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}

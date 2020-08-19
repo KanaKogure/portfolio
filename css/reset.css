@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* 各要素が持っているマージンパディングのスタイルの初期値をリセット */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, address, em, img, strong, dl, dt, dd, ol, ul, li, form, label, table, caption, tr, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+	vertical-align: bottom;
+	border:0 none;
+}
+
+
+/* -------------------------------
+clearfix hack 
+------------------------------- */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+/* hide macie \*/
+*html .clearfixl {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+/* end hide */
+
+/* -------------------------------
+ end clearfix hack 
+------------------------------- */
