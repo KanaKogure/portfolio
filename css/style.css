@@ -1,113 +1,223 @@
-/*
- Theme Name:   KK
- Theme URI: http://anakogure.info/
- Description:  KK
- Author:       Kana Kogure
- Version:      1.0.0
-*/
 @charset "utf-8";
 /* CSS Document */
-
+html,body{
+	width: 100%;
+	overflow-x: hidden;
+}
 html {
     font-size: 62.5%;
 }
 body {
     background: #fff;
-    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 1.6;
     color: #1e1e1e;
-    word-break: break-all;
+    /* word-break: keep-all; */
     -webkit-text-size-adjust: 100%;
-		color:#666;
 }
 * {
     box-sizing: border-box;
 }
 a{
   cursor: pointer;
+  display: inline-block;
+  text-decoration: underline;
 }
-#wrapper{
-	background:url(img/header_bg.gif) repeat-x left top;
+.tl {
+	text-align:left !important;
 }
-
+.tr {
+	text-align:right !important;
+}
+.tc{
+	text-align: center !important;
+}
+.m0{margin: 0 !important;}
+.m10{
+  margin: 10px;
+}
+.m30{
+  margin: 30px;
+}
+.m50{
+  margin: 50px;
+}
+.p0{ padding: 0 !important;}
+.p5{ padding: 5px !important;}
+.p10{
+  padding: 10px;
+}
+.p20{padding: 20px !important;}
+.pl0{ padding-left: 0;}
+.pr0{ padding-right: 0;}
+.p30{
+  padding: 30px;
+}
+.p50{
+  padding: 50px;
+}
+.mt0 {
+	margin-top: 0px !important;
+}
+.mb0 {
+	margin-bottom: 0px !important;
+}
+.mt5 {
+  margin-top: 5px !important;
+}
+.mb5 {
+  margin-bottom: 5px !important;
+}
+.mt10 {
+  margin-top: 10px !important;
+}
+.mb10 {
+  margin-bottom: 10px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+.mb30 {
+  margin-bottom: 30px !important;
+}
+.mt50 {
+  margin-top: 50px !important;
+}
+.mb50 {
+  margin-bottom: 50px !important;
+}
+.mt70 {
+  margin-top: 70px !important;
+}
+.mt80 {
+  margin-top:80px !important;
+}
+.mt100 {
+  margin-top:100px !important;
+}
+.mb70 {
+  margin-bottom: 70px !important;
+}
+.mr5{ margin-right: 5px;}
+.mr10{ margin-right: 10px;}
+.mr30{
+	margin-right: 30px;
+}
+.ml10{
+  margin-left: 10px;
+}
+.ml5{
+  margin-left: 5px;
+}
+.pt30{
+	padding-top: 30px;
+}
+.pt40{
+	padding-top: 40px;
+}
+.pt50{
+	padding-top: 50px;
+}
+.pt80{
+	padding-top: 80px !important;
+}
+.pb10{
+	padding-bottom: 10px;
+}
+.pb20{
+	padding-bottom: 20px;
+}
+.pb30{
+	padding-bottom: 30px;
+}
+.pb40{
+	padding-bottom: 40px;
+}
+.pb50{
+	padding-bottom: 50px;
+}
+.center{
+	text-align: center;
+}
+.bold{
+	font-weight: bold;
+}
+.myname{
+	text-align: center;
+	font-size: 2rem;
+}
+.myjob{
+	text-align: center;
+	margin-bottom: 20px;
+	letter-spacing: 0.6px;
+}
 #header{
 	margin:0 auto;
 	width:100%;
-	height: 22vw;
-	padding:25px 0;
-	background: url(../img/K.png) no-repeat left top,#ffffdb;
-	background-size: 40%;
+	padding: 45px 0;
+	background: url(../img/top_bg.png) no-repeat;
+	background-size: cover;
 	position: relative;
-	background-position: -6%;
+	background-color: rgba(255,255,255,0.2);
+	background-blend-mode:lighten;
+	color: #080808;
+}
+#header p {
+    line-height: 1.8;
+    filter: drop-shadow(0 0px 6px #fff);
 }
 
-h1{
-  width: 30vw;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-2rem,-50%);
+img,iframe {
+    width: 100%;
 }
+h1{width: 50%;margin: auto;}
 
 h1 strong{
 	font-weight:normal;
 	font-size:2em;
 }
-
+p.myprofile {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #010101;
+    padding-bottom: 20px;
+    margin-right: 30px;
+}
 #contents{
 	margin:50px auto;
-	width:980px;
+	width:100%;
+  max-width:1000px;
 	overflow:hidden;
 }
-
-/* ナビゲーション */
-/*#nav{
-	width:180px;
-	float:left;
-	line-height:1.6;
-}*/
-
-/*#nav ul#sliding-navigation li.sliding-element a{
-	text-decoration:none;
-	color:#333;
-	display:block;
-	border-bottom:3px solid #ccc;
-	margin-bottom:1em;
-}*/
-/*
-#nav ul#sliding-navigation li.sliding-element a
-{
-	text-decoration:none;
-	display: block;
-	width: 120px;
-	padding: 7px 10px;
-	border-left:3px solid #aaa;
-	margin-bottom:0.5em;
-	color:#333;
-	background-color:#eee;
+section{
+  width: 90%;
+  margin: auto;
 }
 
-#nav ul#sliding-navigation li.sliding-element a:hover {
-	color: #fff;
-	border-left:5px solid #333;
-	background-color:#999;
-	box-shadow:1px 1px 1px rgba(0,0,0,.2);
-}
-
-#main{
-	width:800px;
-	float:right;
-}*/
 #navigation{
-  width: 100%;}
+  width: 100%;
+	z-index: 1;
+}
 #navigation ul{
   display: flex;
   -webkit-justify-content: center;
-    justify-content: center;
-    background: #f2f2f2;
-    padding: 10px;
+  justify-content: center;
+  background: #f2f2f2;
+  /* padding: 10px; */
+  box-shadow: 0 2px 3px rgba(0,0,0,.3);
+  font-size: 19px;
 }
 #navigation li{
       width: 100%;
@@ -121,106 +231,83 @@ h1 strong{
   text-decoration: none;
   color: #666;
   display: block;
-  cursor:;
+  cursor: ;
+  padding: 10px;
 }
 #navigation li a.active{
-  color: #1edcd0;
+  color: #00cec1;
+  color: #fff;
+  background: #00cec1;
 }
-/*========= biographyBox =========*/
-/*#main #biographyBox{
-	text-align:center;
-	margin-bottom:20px;
-	border:1px solid #999;
-	position:relative;
-
-}
-#main #biographyBox h2{
-	font-size:20px;
-	font-weight:normal;
-	text-transform:uppercase;
-	background:#999;
-	color:#fff;
-	padding:5px;
-	border-bottom: none;
-	text-shadow:-1px -1px 0 rgba(0,0,0,0.5);
-	margin-bottom:0;
-
-	}
-#main #biographyBox .button{
-	background: rgba(0,0,0,.5);
-	padding: 3px 5px;
-	border-radius:5px;
-	position:absolute;
-	right:10px;
-	top:9px;
-	box-shadow: 0 3px 0 rgba(0,0,0,.3);
-	width:12em;
-	font-size:10px;
-	color:#ddd;
-	text-shadow:-1px -1px 0 #000;
-	}
-#main #biographyBox .button:hover{
-	box-shadow: 0 1px 0 rgba(0,0,0,.3);
-	top: 11px;
-}
-
-#main #biographyBox .text{
-	padding: 10px;
-	display:none;
-	text-align: left;
-	}*/
 
 #main h2{
-	/*font-family: 'Fredericka the Great', cursive;*/
-	/* font-family: 'Comfortaa', cursive; */
-	font-weight:300;
+	font-weight: 300;
 	font-size: 2.5em;
-	color:#666;
-	border-bottom: 1px solid #666;
+	color: #00cec1;
+	/* border-bottom: 2px solid #888894; */
 	margin-bottom:40px;
+	text-align: center;
 }
 
 #main h2 span{
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	padding-left:1em;
 	font-size: 0.5em;
 }
 
 
 #main .thumbnail{
-	width: 47%;
-	height:352px;
-	float:left;
-	margin-right: 10px;
-	background-color:#fbfaf7;
-	text-align:center;
-	border:1px solid #fff;
-	box-sizing:border-box;
-	overflow: hidden;
+	/* width: 47%; */
+	/* height:352px; */
+	/* float:left; */
+	/* margin-right: 10px; */
+	/* background-color:#fbfaf7; */
+	/* text-align:center; */
+	/* border:1px solid #fff; */
+	/* box-sizing:border-box; */
+	/* overflow: hidden; */
+	margin-bottom: 30px;
 }
-
-#main .thumbnail:hover{
-	border:1px solid #666;
-	box-sizing:border-box;
+#main .thumbnail a{
+transition:all 0.3s ease-in-out;
+display:block;
 }
+#main .thumbnail a:hover{
+	transform:scale(1.05);
+	opacity:0.7;
+}
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    vertical-align: bottom;
+}
+#main img{
+  width: 100%;
+  vertical-align: bottom;
+  border: 0 none;
+  height: auto;
+  object-fit: cover;
+  margin: 10px 0;
+  }
+#other img{
 
-#main .thumbnail img{
-	height:auto;
-	}
-
+  border-radius: 13px;
+  filter: drop-shadow(0px 0px 3px #ddd);
+  }
 #main .detail{
-	width:50%;
-	float:right;
+	/* width:50%; */
+	/* float:right; */
 }
 
 #main .detail .title{
 	font-size:1.5em;
-	font-weight:bold;
-	border-bottom:2px dashed #999;
-	padding-bottom:0.1em;
-	margin-bottom:.5em;
+	/* font-weight:bold; */
+	border-bottom: 5px dotted #d7d5da;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 	display: flex;
-	align-items: center;
+	align-items: start;
+	justify-content: start;
 }
 
 #main .detail .url{
@@ -231,34 +318,30 @@ h1 strong{
 	margin-bottom:1em;
 }
 
-#main .worksSet .detail dd .small {
+dl.small {
 	font-size:0.9em;
 }
 
-#main .worksSet .detail dd .small dt{
-	background:url(../img/listIcon01.gif) no-repeat left center;
-	padding-left:18px;
+dl.small dt{
+	/* padding-left:18px; */
 	font-weight:bold;
 }
 
-#main .worksSet .detail dd .small dd{
+dl.small dd{
 	margin-bottom:0.5em;
-	padding-left:18px;
+	padding-left: 13px;
 }
 
 .worksSet{
-	clear:both;
-	margin:20px 0;
-	overflow:hidden;
-	padding:8px;
+	/* clear:both; */
+	margin: 50px auto 70px;
+	/* overflow:hidden; */
+	/* padding:8px; */
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 40px;
 }
 
-#pageUp {
-clear: both;
-position:fixed;
-bottom: 50px;
-right:50px;
-}
+#pageUp {/* clear: both; */position:fixed;bottom: 50px;right:50px;}
 
 #pageUp a {
 	display:block;
@@ -266,11 +349,12 @@ right:50px;
 	width:80px;
 	height:80px;
 	color: #999;
-	padding: 10px;
+	padding: 12px 10px;
 	text-decoration: none;
 	border-radius: 80px;
 	background:rgba(0,0,0,.1);
 	transition: all .5s linear;
+	font-size: 13px;
 }
 
 #pageUp a:hover{
@@ -283,7 +367,8 @@ right:50px;
 }
 #pageUp a span{
 	font-weight:bold;
-	font-size:3em;
+	font-size: 25px;
+	line-height: 24px;
 }
 
 table#prTable{
@@ -307,8 +392,10 @@ table#prTable,#prTable th,#prTable td{
 }
 
 #prPhoto{
-	float:left;
 	margin-right:20px;
+	width: 200px !important;
+	display: block;
+	margin: auto;
 }
 
 .sliderWrap{
@@ -319,11 +406,51 @@ table#prTable,#prTable th,#prTable td{
   background: #68dad3;
   color: #fff;
   font-size: 12px;
-  height: 23px;
+  /* width: 37px; */
   padding: 0px 5px;
   line-height: 23px;
   display: inline-block;
   margin-right: 10px;
+  margin-top: 5px;
   border-radius: 3px;
   letter-spacing: 1px;
+  text-align: center;
+  white-space: nowrap;
+}
+.disc{
+  list-style: disc;
+}
+.note {
+    text-align: right;
+    font-size: 11px;
+    color: #666;
+}
+.container {
+  margin: 0 auto 70px;
+  padding: 5px;
+  /* width: 90%; */
+  background-color: #fff;
+  column-count: 3;
+  column-gap: 0;
+}
+.grid {
+  padding: 0 10px 30px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.grid img {
+    background: #eee;
+    margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .container {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    column-count: 1;
+  }
 }
