@@ -167,7 +167,7 @@ a{
 #header{
 	margin:0 auto;
 	width:100%;
-	padding: 45px 0;
+	padding: 25px 0;
 	background: url(../img/top_bg.png) no-repeat;
 	background-size: cover;
 	position: relative;
@@ -194,6 +194,11 @@ p.myprofile {
     border-bottom: 1px solid #010101;
     padding-bottom: 20px;
     margin-right: 30px;
+}
+@media screen and (max-width:480px){
+	p.myprofile{
+		margin-right: 0px;
+	}
 }
 #contents{
 	margin:50px auto;
@@ -262,7 +267,7 @@ section{
 	/* margin-right: 10px; */
 	/* background-color:#fbfaf7; */
 	/* text-align:center; */
-	/* border:1px solid #fff; */
+	/* border: 1px solid #dee2e6; */
 	/* box-sizing:border-box; */
 	/* overflow: hidden; */
 	margin-bottom: 30px;
@@ -288,7 +293,12 @@ display:block;
   height: auto;
   object-fit: cover;
   margin: 10px 0;
+  border: 1px solid #ddd;
   }
+
+#logo img{
+	border:none;
+}
 #other img{
 
   border-radius: 13px;
@@ -329,7 +339,7 @@ dl.small dt{
 
 dl.small dd{
 	margin-bottom:0.5em;
-	padding-left: 13px;
+	/* padding-left: 13px; */
 }
 
 .worksSet{
