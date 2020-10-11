@@ -285,17 +285,16 @@ display:block;
     height: auto;
     object-fit: contain;
     vertical-align: bottom;
+  border: 1px solid #ddd;
 }
 #main img{
   width: 100%;
   vertical-align: bottom;
-  border: 0 none;
+  /* border: 0 none; */
   height: auto;
   object-fit: cover;
   margin: 10px 0;
-  border: 1px solid #ddd;
   }
-
 #logo img{
 	border:none;
 }
@@ -326,6 +325,8 @@ display:block;
 
 #main .detail .desc{
 	margin-bottom:1em;
+	font-weight: bold;
+	font-size: 15px;
 }
 
 dl.small {
