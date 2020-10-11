@@ -430,6 +430,7 @@ table#prTable,#prTable th,#prTable td{
 }
 .disc{
   list-style: disc;
+	padding-left: 20px;
 }
 .note {
     text-align: right;
